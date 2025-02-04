@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Web Form Playground</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+        <div class="container">
+            <div class="imagecontainer">
+                <div class="titledrop">
+                    <h3>The Odin Project</h3>
+                </div>
+                <div class="copyright">Picture from unsplash</div>
+            </div>
+            <div class="formcontainer">
+                <p id="intro">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p id="call">You <em>know</em> what to do.</p>
+                <form class="signup" method="get">
+                    <div class="inputcontainer">
+                        <h4>Let's do this!</h4>
+                        <div id="ipc">
+                            <div class="inputcolumn">
+                                <label for="name">FIRST NAME</label>
+                                <input type="text" id="name" name="name" required>
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+                            </div>
+                            <div class="inputcolumn">
+                                <label for="lname">LAST NAME</label>
+                                <input type="text" id="nlame" name="lname" required>
+                                <label for="tel">PHONE NUMBER</label>
+                                <input type="tel" id="tel" name="tel">
+                                <label for="cpassword">CONFIRM PASSWORD</label>
+                                <input type="password" id="cpassword" name="cpassword" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit">Create Account</button>
+                    <p id="account">Already have an account? <a> Log in</a></p>
+                </form>
+            </div>
+        </div>
+    </header>
+  </body>
+</html>
